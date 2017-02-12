@@ -1,0 +1,155 @@
+/****************************************
+ Responsible  Layout
+*****************************************/
+
+/* Wrapper */
+
+.app {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* We tell all items to be 100% width */
+
+header,
+main,
+nav,
+asideLeft,
+asideRight,
+footer {
+  flex: 1 100%;
+}
+
+asideRight{
+  background: #F3C;
+}
+asideLeft {
+   background: #3CF;
+}
+footer {
+  color:white;
+  background:black;
+}
+
+header{
+  position: relative;
+   background:yellow;
+}
+
+/* Medium screens */
+
+@media all and (min-width: 600px) {
+  /* We tell both sidebars to share a row */
+
+  asideLeft {
+    flex: 1 auto;
+  }
+
+  asideRight {
+    flex: 1 auto;
+  }
+}
+
+/* Large screens */
+
+@media all and (min-width: 800px) {
+  /* We invert order of first sidebar and main
+   * And tell the main element to take twice as much width as the other two sidebars 
+   */
+
+  asideLeft {
+    order: 1;
+  }
+
+  main {
+    order: 2;
+    flex: 3 0px;
+  }
+
+  asideRight {
+    order: 3;
+  }
+
+  footer {
+    order: 4;
+  }
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/****************************************
+  Navigation
+*****************************************/
+
+
+header > ul {
+  list-style: none;
+  display: block;
+  margin: 0 auto;
+}
+
+header > ul > li {
+  margin-top: 9px;
+  float: left;
+  padding-left: 21px;
+}
+
+header > ul > li > a {
+  color: #000;
+  -ms-opacity: 0.6;
+  opacity: 0.6;
+  font-size: 1em;
+  text-decoration: none;
+  font-family: 'Wellfleet', normal;
+}
+
+header > ul > li > a.active {
+  color: #000;
+  -ms-opacity: 1;
+  opacity: 1;
+  border-bottom: 2px solid #fff;
+}
+
+header > ul > li > a:hover {
+  color: blue;
+  -ms-opacity: 1;
+  opacity: 1;
+} 
+
+
+/****************************************
+  Fonts
+*****************************************/
+
+/* latin-ext */
+
+@font-face {
+  font-family: 'Wellfleet';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Wellfleet'), local('Wellfleet-Regular'), url("http://fonts.gstatic.com/s/wellfleet/v4/Hrlltf_-VcwaRNHdrDwsexJtnKITppOI_IvcXXDNrsc.woff2") format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+
+@font-face {
+  font-family: 'Wellfleet';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Wellfleet'), local('Wellfleet-Regular'), url("http://fonts.gstatic.com/s/wellfleet/v4/qu15OBOh_Q0T8ooRUaKSDVtXRa8TVwTICgirnJhmVJw.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/* latin */
+
+@font-face {
+  font-family: 'Voltaire';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Voltaire'), url("http://fonts.gstatic.com/s/voltaire/v6/Bcdym-dNGztfenGzlRsZ3_esZW2xOQ-xsNqO47m55DA.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
