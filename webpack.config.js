@@ -1,7 +1,16 @@
+var path = require('path');
+
 module.exports =  {
-    entry: ["./app.js", "./utils.js"],
+    context: path.resolve('js'),
+
+    entry: ["./app", "./utils.js"],
     output: {
+        path: path.resolve('public/js/'),
+        publicPath: '/js/',
         filename: "bundle.js"
+    },
+    devServer: {
+        contentBase: 'public'   //all webpack-dev-server requests look to this folder and requests to /public/js/ look to build/js
     },
     watch:true,
     module: {      

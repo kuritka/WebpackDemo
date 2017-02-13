@@ -1,4 +1,5 @@
-require('./login');
+import {login} from './login';
+login('admin','1234sa');
 
 console.log('App loaded');
 
