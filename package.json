@@ -1,20 +1,23 @@
 {
-  "name": "WebpackDemo",
+  "name": "WebpackDemo01",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
-        "start": "webpack-dev-server --inline"
-    },
+    "build": "webpack --config webpack.config.PROD.js -p && http-server",
+    "start": "webpack-dev-server --inline"
+  },
   "author": "kuritka",
   "devDependencies": {
     "babel-core": "^6.2.1",
     "babel-loader": "^6.2.10",
     "babel-preset-es2015": "^6.22.0",
+    "css-loader": "^0.26.1",
     "jshint": "^2.8.0",
     "jshint-loader": "^0.8.3",
     "node-libs-browser": "^0.5.3",
     "strip-loader": "^0.1.0",
+    "style-loader": "^0.13.1",
     "webpack": "^2.2.1"
   }
 }

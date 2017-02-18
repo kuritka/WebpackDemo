@@ -21,19 +21,29 @@ footer {
 }
 
 asideRight{
-  background: #F3C;
+  color:#0d0d0d;
+  background:white;
+  font-family: 'Voltaire', normal;
 }
 asideLeft {
-   background: #3CF;
+  color:#0d0d0d;
+  background:white;
+  font-family: 'Voltaire', normal;
 }
 footer {
-  color:white;
-  background:black;
+  color:#0d0d0d;
+  background:white;
+  font-family: 'Voltaire', normal;
 }
 
 header{
   position: relative;
    background:yellow;
+}
+
+main {
+   font-family: 'Voltaire', normal;
+   font-size: 0.8em;
 }
 
 /* Medium screens */
