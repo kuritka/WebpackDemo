@@ -41,3 +41,5 @@ sample demo demonstrates typical 2016+ frontend development :
 
 
 https://designshack.net/articles/css/7-awesome-emmet-html-time-saving-tips/
+
+http://codepen.io/dgca/pen/QExbKN

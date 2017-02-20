@@ -1,5 +1,10 @@
 import {login} from './login';
-login('admin','1234sa');
+import {less} from '../css/test.less';
+//require('../css/test.less');
+//require('../css/bootstrap.css');
+
+
+login('admin','1234s');
 
 console.log('App loaded');
 
