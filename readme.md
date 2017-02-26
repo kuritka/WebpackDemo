@@ -36,7 +36,9 @@ sample demo demonstrates typical 2016+ frontend development :
  static analysis in preLoad (jshint-loader: before babel executes)
  minifying bundle for PROD release but skipping minification for DEV + stripping out Trace messages (console.log)
  producing multiple bundles (lazy loading scenarios; shared and divided resources )
+ Autoprefixing (i.e. to background: linear-gradient(to top, #eee, white);  automatically adds background: -webkit-linear-gradient(bottom, #eee, white);)
  execute all by 'npm start'
+ build PROD by 'npm run build'
 
 
 

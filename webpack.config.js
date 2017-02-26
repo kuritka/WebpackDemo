@@ -12,8 +12,7 @@ module.exports =  {
         filename: "js/bundle.js"                   //gets name from entry: {...}
     },
 
-   // plugins: [new ExtractTextPlugin({filename: 'xyz.css', allChunks: true})],
-    plugins: [new ExtractTextPlugin({filename: 'css/xyz.css',allChunks: true,fallback: 'style-loader'})],
+    plugins: [new ExtractTextPlugin({filename: 'css/styles.css',allChunks: true,fallback: 'style-loader'})],
 
     devServer: {
         contentBase: 'public'   //all webpack-dev-server requests look to this folder and requests to /public/js/ look to build/js
@@ -43,16 +42,16 @@ module.exports =  {
         {
             test: /\.css$/,
             exclude: /node_modules/,    
-            loader: ExtractTextPlugin.extract({ fallback: "style-loader", use:"css-loader" , allChunks: true})       //runs css loader first through style-loader
+            loader: ExtractTextPlugin.extract({ fallback: "style-loader", use:"css-loader!postcss-loader" , allChunks: true})       //runs css loader first through style-loader
         },
         {
             // we will proccess scss files when required
             test: /\.scss$/,
-            exclude: /node_modules/,
+            exclude: /node_modules/, 
             // we will extract the output file to a different location and will inject it manualy to the page
             // used for performance boost and good for large apps.
             // we will also generate sourcemaps, disable in production
-            loader: ExtractTextPlugin.extract({ use: "css-loader!sass-loader", allChunks: true })
+            loader: ExtractTextPlugin.extract({ use: "css-loader!postcss-loader!sass-loader", allChunks: true })
         }
         ], 
     },

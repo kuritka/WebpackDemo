@@ -2,7 +2,7 @@ import {login} from './login';
 
 //import {sass} from '../css/demo.scss';
 require('../css/demo.scss');
-require('../css/bootstrap.css');
+require('../css/layout.css');
 
 
 login('admin','1234s');
