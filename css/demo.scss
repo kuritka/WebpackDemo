@@ -1,7 +1,8 @@
 $font-stack:    Helvetica, sans-serif;
-$primary-color: #f00;
+$primary-color: #aaa;
+$height: 4em;
 
 h1 {
-  font: 100% $font-stack;
+  font: 100% $font-stack $height;
   color: $primary-color;
 }

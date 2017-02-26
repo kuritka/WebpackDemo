@@ -7,7 +7,7 @@ var stripLoader = {
     loader: strip.loader('console.log','perfLog')
 }
 
-//webpack 2.x.x + babel  + WIN doesnt support loaders section  devConfig.module.loaders.push(stripLoader);
+//webpack 1.x.x + babel  doesnt support loaders: devConfig.module.loaders.push(stripLoader);
 devConfig.module.rules.push(stripLoader);
 
 devConfig.watch = false;

@@ -7,13 +7,13 @@ module.exports =  {
     context: path.resolve('js'),
     entry: ["./app", "./utils.js"],
     output: {
-        path: path.resolve('public/js/'),
-        publicPath: '/js/',
-        filename: "bundle.js"                   //gets name from entry: {...}
+        path: path.resolve('public/assets/'),
+        publicPath: '/assets/',
+        filename: "js/bundle.js"                   //gets name from entry: {...}
     },
 
    // plugins: [new ExtractTextPlugin({filename: 'xyz.css', allChunks: true})],
-    plugins: [new ExtractTextPlugin({filename: 'xyz.css',allChunks: true,fallback: 'style-loader'})],
+    plugins: [new ExtractTextPlugin({filename: 'css/xyz.css',allChunks: true,fallback: 'style-loader'})],
 
     devServer: {
         contentBase: 'public'   //all webpack-dev-server requests look to this folder and requests to /public/js/ look to build/js
