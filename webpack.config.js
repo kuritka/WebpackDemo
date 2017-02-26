@@ -12,7 +12,8 @@ module.exports =  {
         filename: "bundle.js"                   //gets name from entry: {...}
     },
 
-    plugins: [new ExtractTextPlugin('styles.css')],
+   // plugins: [new ExtractTextPlugin({filename: 'xyz.css', allChunks: true})],
+    plugins: [new ExtractTextPlugin({filename: 'xyz.css',allChunks: true,fallback: 'style-loader'})],
 
     devServer: {
         contentBase: 'public'   //all webpack-dev-server requests look to this folder and requests to /public/js/ look to build/js
@@ -42,32 +43,18 @@ module.exports =  {
         {
             test: /\.css$/,
             exclude: /node_modules/,    
-            loader: ExtractTextPlugin.extract({use:"css-loader"})       //runs css loader first through style-loader
+            loader: ExtractTextPlugin.extract({ fallback: "style-loader", use:"css-loader" , allChunks: true})       //runs css loader first through style-loader
         },
         {
-            test: /\.less$/,
-            exclude: /node_modules/,    
-            loader: ExtractTextPlugin.extract({ use: "css-loader!less-loader"})       //runs css loader first through style-loader
+            // we will proccess scss files when required
+            test: /\.scss$/,
+            exclude: /node_modules/,
+            // we will extract the output file to a different location and will inject it manualy to the page
+            // used for performance boost and good for large apps.
+            // we will also generate sourcemaps, disable in production
+            loader: ExtractTextPlugin.extract({ use: "css-loader!sass-loader", allChunks: true })
         }
         ], 
-        // LINUX
-        //loaders cannot be null because webpack.config.PROD minifies ECMA5 bundle.js
-        //Webpack 2.x.x with babel on Win machine didnt transform to ES5, thats why 
-        //following sections doesnt exists and enforce sections must exist
-        // preloaders: [
-        //     {
-        //     test: /\.js$/,              
-        //     exclude: /node_modules/,     
-        //     loader: "jshint-loader"
-        //     }
-        // ]
-        // loaders: [
-        //     {
-        //         test: [/\.es6$/],         
-        //         exclude: /node_modules/,
-        //         loader: 'babel-loader'
-        //     }
-        // ]
     },
     resolve: {
         //which extensions webpack resolves (app.js : require(.. ))

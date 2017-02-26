@@ -1,7 +1,8 @@
 import {login} from './login';
-import {less} from '../css/test.less';
-//require('../css/test.less');
-//require('../css/bootstrap.css');
+
+//import {sass} from '../css/demo.scss';
+require('../css/demo.scss');
+require('../css/bootstrap.css');
 
 
 login('admin','1234s');
