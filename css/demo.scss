@@ -8,3 +8,29 @@ h1 {
   border-radius: 5px;
   background: linear-gradient(to top, #eee, white);
 }
+
+
+
+
+@font-face
+{
+      font-family: 'CabinSketch';
+
+      src: url('../fonts/CabinSketch-Bold.ttf');
+
+      src: url('../fonts/CabinSketch-Regular.ttf');
+}
+
+
+h3
+{
+  font-family: 'CabinSketch';
+  font-size:  2em;
+}
+
+h4
+{
+  font-family: 'CabinSketch';
+  font-size:  4em;
+  font-weight: bold;
+}

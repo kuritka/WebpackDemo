@@ -39,8 +39,9 @@ sample demo demonstrates typical 2016+ frontend development :
  Autoprefixing (i.e. to background: linear-gradient(to top, #eee, white);  automatically adds background: -webkit-linear-gradient(bottom, #eee, white);)
  execute all by 'npm start'
  build PROD by 'npm run build'
-
-
+ Images: Webpack transforms images to base64 format (url-loader, file-loader); (i.e. images up to size 100kb are downloaded as inlined base64 image instead of downloading multiple resources. Bigger images are not transformed).
+        - I skipped this functionality on purpose.  Open topic for discussions    
+ Fonts: If font  exceed specified size limit it will be copied to build folder, otherwise it is bundled in css
 
 https://designshack.net/articles/css/7-awesome-emmet-html-time-saving-tips/
 

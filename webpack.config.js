@@ -52,6 +52,11 @@ module.exports =  {
             // used for performance boost and good for large apps.
             // we will also generate sourcemaps, disable in production
             loader: ExtractTextPlugin.extract({ use: "css-loader!postcss-loader!sass-loader", allChunks: true })
+        },
+        {
+            test: /\.(ttf|eot)$/,
+            exclude: /node_modules/,    
+            loader: 'url-loader?limit=200000'
         }
         ], 
     },
