@@ -1,7 +1,6 @@
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 //http://blog.grossman.io/writing-es6-ionic-code-with-webpack/
-//var commonPlugin = new webpack.optimize.CommonChunkPlugin('shared.js'); 
 
 module.exports =  {
     context: path.resolve('js'),
@@ -22,9 +21,6 @@ module.exports =  {
         //WINDOWS  
         rules:[
         {
-            //enforce: pre is hack to old versions 
-            //from Webpack 2.1.1 25 beta we use preLoaders: [] array. 
-            //as 201702 2.1.1 25 beta is working under linux but not under Win
             enforce: 'pre',              
             test: /\.js$/,               
             exclude: /node_modules/,      

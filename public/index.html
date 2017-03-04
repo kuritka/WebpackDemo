@@ -1,34 +1,124 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Webpack example</title>
         <link rel="stylesheet" href="/assets/css/styles.css">  
     </head>
-    <body>
-        <div class="app">
-            <header>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="something.html" class="active">Something</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-            </ul>
-            </header>
-            <main>
-                <div>
-                    <h1>Hello</h1>
-                    <h3>Bundled font CabinSketch</h3>
-                    <h4>CabinSketch-bold exceeded size limit, so it is not bundled</h4>
-                    <script src="/assets/js/bundle.js"></script>
-                </div>      
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione delectus sunt ipsa reiciendis quia laudantium, laboriosam nam eveniet totam nihil cupiditate sequi fugiat corrupti vitae doloremque recusandae sint, exercitationem architecto.</div>
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione delectus sunt ipsa reiciendis quia laudantium, laboriosam nam eveniet totam nihil cupiditate sequi fugiat corrupti vitae doloremque recusandae sint, exercitationem architecto.</div>
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione delectus sunt ipsa reiciendis quia laudantium, laboriosam nam eveniet totam nihil cupiditate sequi fugiat corrupti vitae doloremque recusandae sint, exercitationem architecto.</div>
-            </main>
-            <asideLeft>Left</asideLeft>
-            <asideRight>Right</asideRight>
-            <footer>Footer</footer>
+   <body>
+   
+ 
+  <aheader>
+          <ul>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="about.html" class="active">About</a></li>
+          </ul>
+    </aheader>
+
+<div class="hero">
+  <h3><strong>WEBPACK DEMO responsive </strong></h3>
+</div>
+<div class="flex-container">
+
+  <div class="about">
+  
+    <p>If you want to create a three-column row that will stack vertically at the medium breakpoint size, your markup would look like this:</p>
+
+<pre><code>&lt;div class="flex-row"&gt;
+  &lt;div class="flex-col-md-4"&gt;
+    &lt;h3&gt;I'm the first element&lt;/h3&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="flex-col-md-4"&gt;
+    &lt;h3&gt;I'm the second element&lt;/h3&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="flex-col-md-4"&gt;
+    &lt;h3&gt;I'm the third element&lt;/h3&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    
+    <p>...which creates this:</p>
+    
+    <div class="flex-row">
+      <div class="flex-col-md-4">
+        <h3>I'm the first element</h3>
+        <p>Lorem ipsum dolor sit amet</p>
+      </div>
+      <div class="flex-col-md-4">
+        <h3>I'm the second element</h3>
+        <p>Lorem ipsum dolor sit amet</p>
+      </div>
+      <div class="flex-col-md-4">
+        <h3>I'm the third element</h3>
+        <p>Lorem ipsum dolor sit amet</p>
+      </div>
+    </div>
+
+    <h3>Breakpoint Sizes</h3>
+
+    <p>
+    <strong>xs</strong> = 540px<br>
+    <strong>sm</strong> = 768px<br>
+    <strong>md</strong> = 992px<br>
+    <strong>lg</strong> = 1200px<br>
+    </p>
+
+    <h2>Sample Grid</h2>
+  </div>
+
+  <div class="flex-row">
+    <div class="flex-col-sm-1">flex-col-sm-1</div>
+    <div class="flex-col-sm-1">flex-col-sm-1</div>
+    <div class="flex-col-sm-1">flex-col-sm-1</div>
+    <div class="flex-col-sm-1">flex-col-sm-1</div>
+    <div class="flex-col-sm-1">flex-col-sm-1</div>
+    <div class="flex-col-sm-1">flex-col-sm-1</div>
+    <div class="flex-col-sm-1">flex-col-sm-1</div>
+    <div class="flex-col-sm-1">flex-col-sm-1</div>
+    <div class="flex-col-sm-1">flex-col-sm-1</div>
+    <div class="flex-col-sm-1">flex-col-sm-1</div>
+    <div class="flex-col-sm-1">flex-col-sm-1</div>
+    <div class="flex-col-sm-1">flex-col-sm-1</div>
+  </div>
+  <div class="flex-row">
+    <div class="flex-col-sm-2">flex-col-sm-2</div>
+    <div class="flex-col-sm-2">flex-col-sm-2</div>
+    <div class="flex-col-sm-2">flex-col-sm-2</div>
+    <div class="flex-col-sm-2">flex-col-sm-2</div>
+    <div class="flex-col-sm-2">flex-col-sm-2</div>
+    <div class="flex-col-sm-2">flex-col-sm-2</div>
+  </div>
+  <div class="flex-row">
+    <div class="flex-col-sm-3">flex-col-sm-3</div>
+    <div class="flex-col-sm-3">flex-col-sm-3</div>
+    <div class="flex-col-sm-3">flex-col-sm-3</div>
+    <div class="flex-col-sm-3">flex-col-sm-3</div>
+  </div>
+  <div class="flex-row">
+    <div class="flex-col-sm-4">flex-col-sm-4</div>
+    <div class="flex-col-sm-4">flex-col-sm-4</div>
+    <div class="flex-col-sm-4">flex-col-sm-4</div>
+  </div>
+  <div class="flex-row">
+    <div class="flex-col-sm-2">flex-col-sm-2</div>
+    <div class="flex-col-sm-5">flex-col-sm-5</div>
+    <div class="flex-col-sm-5">flex-col-sm-5</div>
+  </div>
+  <div class="flex-row">
+    <div class="flex-col-sm-6">flex-col-sm-6</div>
+    <div class="flex-col-sm-6">flex-col-sm-6</div>
+  </div>
+  <div class="flex-row">
+    <div class="flex-col-sm-12">flex-col-sm-12</div>
+  </div>
+</div>
+<footer>
+  <p>A work in progress by <a href="http://youtunel.cz/" target="_blank">kuritka</a></p>
+</footer>
+
         </div>
     </body>
 </html>

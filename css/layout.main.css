@@ -1,0 +1,82 @@
+ :root {
+    color: #2E282A;
+    font-family: 'Open Sans';
+  }
+  
+  body {
+    background-color: #EFF1F3;
+  }
+  
+  .hero {
+    background-color: #d6d0d0;
+    border-bottom: 0.5em solid #2E282A;
+    color: #2E282A;
+    text-align: center;
+    margin-bottom: 2em;
+    padding: 4.5em 2em;
+  }
+  
+  .hero p {
+    margin-bottom: 0;
+  }
+  
+  h1 {
+    font-family: 'Roboto Slab';
+    font-size: 64px;
+    margin: 0 0 0.25em;
+  }
+  
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 48px;
+    }
+  }
+  
+  p {
+    margin: 0 auto 2em;
+  }
+  
+  p code {
+    background-color: #FFD6E0;
+    border: 1px solid #FF7093;
+    border-radius: 0.2em;
+    padding: 0.15em 0.25em;
+  }
+  
+  a {
+    color: #10778C;
+  }
+  
+  pre {
+    background-color: #FFF4F7;
+    border: 1px solid #FFD6E0;
+    border-radius: 0.2em;
+    padding: 0.5em 0.75em;
+  }
+  
+  .about {
+    margin: 0 auto;
+    max-width: 60ch;
+  }
+
+  [class^='flex-col'] {
+    background-color: #FFD6E0;
+    border: 1px dotted #FF7093;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #2E282A;
+    color: #EFF1F3;
+    margin-top: 4em;
+    padding: 4em 2em;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer a {
+    color: #17BEBB;
+  }

@@ -3,24 +3,28 @@
     <head>
         <meta charset="utf-8"/>
         <title>Webpack example</title>
-        <link rel="stylesheet" href="/main.css">  
+        <link rel="stylesheet" href="/assets/css/styles.css">  
     </head>
-    <body>
+   <body>
         <div class="app">
-            <header>
+            <aheader>
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="something.html" class="active">Something</a></li>
                 <li><a href="about.html" class="active">About</a></li>
             </ul>
-            </header>
-            <main>
-                 <H1>ABOUT</H1>
-                 <h4>this page contains one shared bundle and one specific </h4>               
-            </main>
+            </aheader>
+            <amain>
+                <div>
+                    <h3>Bundled font CabinSketch</h3>
+                    <h4>CabinSketch-bold exceeded size limit, so it is not bundled</h4>
+                    <script src="/assets/js/bundle.js"></script>
+                </div>      
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione delectus sunt ipsa reiciendis quia laudantium, laboriosam nam eveniet totam nihil cupiditate sequi fugiat corrupti vitae doloremque recusandae sint, exercitationem architecto.</div>
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione delectus sunt ipsa reiciendis quia laudantium, laboriosam nam eveniet totam nihil cupiditate sequi fugiat corrupti vitae doloremque recusandae sint, exercitationem architecto.</div>
+            </amain>
             <asideLeft>Left</asideLeft>
             <asideRight>Right</asideRight>
-            <footer>Footer</footer>
+            <afooter>Footer</afooter>
         </div>
     </body>
 </html>

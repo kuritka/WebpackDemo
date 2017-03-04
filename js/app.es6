@@ -1,9 +1,10 @@
 import {login} from './login';
 
 //import {sass} from '../css/demo.scss';
-require('../css/demo.scss');
-require('../css/layout.css');
-
+require('../css/layout.about.scss');
+require('../css/layout.about.css');
+require('../css/layout.main.scss');
+require('../css/layout.main.css');
 
 login('admin','1234s');
 
