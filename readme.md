@@ -1,6 +1,9 @@
 
 # webpack demo 
 
+
+![Demo ](https://github.com/kuritka/Pics/blob/master/WebpackDemo/1.PNG?raw=true)
+
 Forget these technologies because they have no longer deserve attention
 
    - bundling + minification on server side (ASPNET modules , Rails modules)
@@ -34,4 +37,17 @@ sample demo shows :
  * $ npm install http-server -g
  * **$ npm start** *for running or* **$ npm run build** *to get PROD version*
  * open browser window with http://localhost:8080 
+ * change app.es6 login('admin','1234sa'); to  login('admin','blah');  and see what happens
 
+
+![Webpack Run ](https://github.com/kuritka/Pics/blob/master/WebpackDemo/WebpackRun.PNG?raw=true)
+
+![Webpack Run ](https://github.com/kuritka/Pics/blob/master/WebpackDemo/1.PNG?raw=true)
+
+![Webpack Run ](https://github.com/kuritka/Pics/blob/master/WebpackDemo/2.PNG?raw=true)
+
+![Webpack Run ](https://github.com/kuritka/Pics/blob/master/WebpackDemo/3.PNG?raw=true)
+
+![Webpack Run ](https://github.com/kuritka/Pics/blob/master/WebpackDemo/4.PNG?raw=true)
+
+![Webpack Run ](https://github.com/kuritka/Pics/blob/master/WebpackDemo/5.PNG?raw=true)

@@ -6,7 +6,7 @@ require('../css/layout.about.css');
 require('../css/layout.main.scss');
 require('../css/layout.main.css');
 
-login('admin','1234s');
+login('admin','1234sa');
 
 console.log('App loaded');
 
